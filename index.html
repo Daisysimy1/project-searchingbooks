@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library</title>
+    <link rel="icon" href="images/libo.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer type="text/javascript" src="config.js"></script>
+    
+</head>
+<body>
+    
+   <header> <h1>Welcome! You are free to search for a book you would like to read</h1> </header>   
+    <form id="search-form">
+        <label for="book-title"> <b> Search by Book Title</b></label><br>
+        <input type="text" id="search-title">
+        <input type="submit" value="Search">
+    </form>
+   
+    <div id="selected-image">
+        <!-- Image of selected book will show here as well as the title and author -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/800px-Question_mark_%28black%29.svg.png" alt="Book Not Selected" />
+        <h2 class="book-name">Book Title</h2>
+        <h3 class="book-author">Author</h3>
+    </div>
+
+    <div id="description-div">
+    <h2 id="description-header"><u>Description:</u></h2>
+    <p id="description-text">Book Description</p>
+    </div>
+
+    <div id ="search-images">
+        <!-- Images from user search will go here -->
+    </div>
+
+    <div id="search-div">
+        <h2><u>Search List:</u></h2>
+        <ul id="search-list">
+
+        </ul>
+    </div>
+
+    <form id="addBook-form">
+        <input type="text" id="add-book">
+        <input type="submit" value="Like Book">
+    </form>
+
+    <div id="user-div">
+        <h2><u>Your Favorite Books:</u></h2>
+        <ul id="user-list">
+            
+        </ul>
+    </div>
+    
+</body>
+</html>
